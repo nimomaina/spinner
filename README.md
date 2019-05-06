@@ -4,7 +4,6 @@ A marketing website that allows users to learn more about Fidget Spinners and ma
 ## By Wairimu Maina
 A Full Stack Developer
 
-![Image description](assets/img/)
 
 
 ### Behaviour-Driven Development
