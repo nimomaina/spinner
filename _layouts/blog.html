@@ -20,13 +20,16 @@
                         <p class=""> {{page.date | date: "%A %-d %b %Y"}}</p>
 
                         <hr>
+                        {% if page.path-to-image %}
                         <div class="w3-display-center">
                             <img src="{{page.path-to-image}}" class="image">
 
-
+                            <br>
 
                         </div>
-                        <div class="w3-display-container">
+                        {% else %}
+                        {% endif %}
+                        <div class="w3-display-container  w3-justify">
                             {{page.content}}
 
                         </div>
@@ -47,7 +50,7 @@
                         <div class="w3-card-4">
 
                             <header class="w3-container">
-                                <h4>{{post.title}}</h4>
+                                <h5> <strong>{{post.title}}</strong></h5>
                             </header>
 
                             <div class="w3-container">
