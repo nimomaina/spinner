@@ -3,5 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: prod
+title: "Check out some of our fidget spinners"
 permalink: /products/
 ---
