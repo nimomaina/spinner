@@ -1,6 +1,6 @@
 ---
 
-layout: post
+layout: blogs
 title:  "Can Fidget Spinners Really Help Anxiety and ADHD?"
 
 blog-preview: The trendiest toy on the market is said to calm anxious minds. We asked a psychiatrist if these devices can actually make a difference for people living with anxiety, ADHD, and autism.

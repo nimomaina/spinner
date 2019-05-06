@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blogs
 
 title:  "What are they and why are they so addictive?"
 
@@ -9,7 +9,7 @@ path-to-image: ../assets/img/frainbow.png
 
 author: "Wanjiru Njuguna"
 
-permalink: /what-is-a-fidget-spinner /
+permalink: /what-is-a-fidget-spinner/
 
 ---
 
