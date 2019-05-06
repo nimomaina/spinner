@@ -27,6 +27,15 @@
     display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 100%;
+  height:300px;
+  object-fit: cover;
     
+  }
+  #post{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+   
   }

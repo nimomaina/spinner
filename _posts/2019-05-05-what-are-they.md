@@ -8,7 +8,7 @@ date: 2019-05-05
 
 blog-preview: Procrastination toys are taking the world by storm, but none of them are dominating the market quite like the fidget spinner
 
-path-to-image: ../assets/img/frainbow.png
+path-to-image: ../assets/img/fbg2.jpg
 
 author: "Wanjiru Njuguna"
 
