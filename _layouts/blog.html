@@ -4,6 +4,18 @@
 
 <body>
     {% include header.html %}
+
+    <div class="w3-container">
+        <div class="w3-row w3-center">
+                <h2> {{page.title| upper}} </h2>
+
+                <p> <em>{{page.blog-preview}}</em></p>
+                <hr>
+                <p class="w3-left">By {{page.author}}</p>
+
+
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 other-blogs">
@@ -39,7 +51,7 @@
                 {% include footer.html %}
             {% endif %}
     </div>
-{% include scripts.html %}
+
 </body>
 
 </html>
