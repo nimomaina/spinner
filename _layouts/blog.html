@@ -4,53 +4,65 @@
 
 <body>
     {% include header.html %}
-
-    <div class="w3-container">
-        <div class="w3-row w3-center">
-                <h2> {{page.title| upper}} </h2>
-
-                <p> <em>{{page.blog-preview}}</em></p>
-                <hr>
-                <p class="w3-left">By {{page.author}}</p>
-
-
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4 other-blogs">
-                <div class = "title">
+    <br>
+    <div class="container">
+        <div class="w3-row">
+            <div class="w3-col l8">
+                <!-- one post details -->
+                <div class="w3-row w3-center">
                     <h2> {{page.title| upper}} </h2>
+
+                    <p> <em>{{page.blog-preview}}</em></p>
+                    <hr>
+                    <p class=""> {{page.author}}</p>
+                    <p class=""> {{page.date | date: "%A %-d %b %Y"}}</p>
+
+                    <hr>
+                    <div class="w3-display-center">
+                        <img src="{{page.path-to-image}}" class="image">
+
+
+
+                    </div>
+                    <div class="w3-display-container">
+                        {{page.content}}
+
+                    </div>
+
                 </div>
-                <div class="row">
-                    <div class="col-md-12 hidden-sm">
-                        {% for post in site.posts %}
-                            <h4>{{post.title}}</h4>
-                            <div class="blog-preview">
-                               {{post.blog-preview}}
-                               <a href="..{{post.permalink}}"> Continue reading </a> 
-                            </div>
-                            <div class="blog-image">
-                                <img src="{{post.path-to-image}}" alt="{{post.image-description}}">
-                            </div>
-                        {% endfor %}
+            </div>
+
+            <!-- end one page details -->
+
+            <!-- blog post headlines -->
+
+            <div class="w3-col l4">
+                {% for post in site.posts %}
+                <div class="w3-row">
+                    <div class="w3-card-4">
+
+                        <header class="w3-container">
+                            <h1>Header</h1>
+                        </header>
+
+                        <div class="w3-container">
+                            <p>Lorem ipsum...</p>
+                        </div>
+
+                        <footer class="w3-container ">
+                            <h5>Read More</h5>
+                        </footer>
+
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-xs-12 main-blog">
-                <div class="title" >
-                    <h3 class="heading">{{page.title| upper}}</h3>
-                    <img src="{{page.path-to-image}}" alt="{{page.image-description}}">
-                </div>
-                <div class="blog-content">
-                    {{page.content}}
-                </div>
+
+                {% endfor %}
+
             </div>
         </div>
-            {% if page.show_footer %}
-                {% include footer.html %}
-            {% endif %}
+
     </div>
+
 
 </body>
 
