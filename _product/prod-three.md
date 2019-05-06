@@ -1,6 +1,6 @@
 ---
 
-layout: prod
+layout: order
 name: Pink Spinner
 description: "This amazing multi-fidgeting device will help you keep your mind on track. "
 price: $ 1.70

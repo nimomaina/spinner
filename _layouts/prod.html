@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+{% include wrapper.html %}
+
+<body>
+    {% include header.html %}
+    <div class="container">
+        <div class="w3-row">
+            {% for product in site.product %}
+
+            <div class="w3-col l4 m6 s12">
+                <div class="w3-card-2">
+                    <img src="{{product.path-to-image}}">
+                </div>
+                <div class="w3-container">
+                    <p> <strong>{{product.name}}</strong></p>
+                    <p>{{product.description}}</p>
+                    <p>{{product.price}}</p>
+                    <a href='..{{product.permalink}}'><button>Buy Now</button></a>
+
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+</body>
+
+</html>

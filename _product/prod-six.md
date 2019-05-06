@@ -1,6 +1,6 @@
 ---
 
-layout: prod
+layout: order
 name: Silver Spinner
 description: "Tri-bar fidget spinner is one of the most popular fidgets on the web."
 price: $ 1.00

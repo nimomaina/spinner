@@ -1,6 +1,6 @@
 ---
 
-layout: prod
+layout: order
 name: Black Spinner
 description: "This awesome metal spinning toy with iridescent colorful finish can be a perfect gift "
 price: $ 4.50
