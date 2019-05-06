@@ -4,21 +4,25 @@
 
 <body>
     {% include header.html %}
+    <br>
     <div class="container">
-        <div class="w3-row">
-            {% for product in site.product %}
+        <div class="w3-row-padding">
+            {% for product in site.products %}
+         
 
             <div class="w3-col l4 m6 s12">
-                <div class="w3-card-2">
-                    <img src="{{product.path-to-image}}">
+                <div class="w3-card-2 w3-white w3-margin-bottom" style="max-height:400px;min-height:400px;">
+                    <img src="{{product.path-to-image}}" style="max-width:150px;min-width:150px;max-height:150px;min-height:150px;display: block; margin-right: auto;margin-left:auto">
+                    <div class="w3-container">
+                            <p> <strong>{{product.name}}</strong></p>
+                            <p>{{product.description}}</p>
+                            <p>{{product.price}}</p>
+                            <a href='..{{product.permalink}}'><button class="w3-btn w3-round-xxlarge w3-teal">Buy Now</button>
+                            </a>
+        
+                        </div>
                 </div>
-                <div class="w3-container">
-                    <p> <strong>{{product.name}}</strong></p>
-                    <p>{{product.description}}</p>
-                    <p>{{product.price}}</p>
-                    <a href='..{{product.permalink}}'><button>Buy Now</button></a>
-
-                </div>
+             
             </div>
 
             {% endfor %}
@@ -26,5 +30,30 @@
 
     </div>
 </body>
-
+<script>
+        // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
+        
+        
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+        
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+        
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+        </script>
 </html>
